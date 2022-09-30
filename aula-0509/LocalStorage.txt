@@ -1,0 +1,26 @@
+LocalStorage
+Recurso para salvar dados no browser
+Os dados persistem mesmo após a página ser recarregada
+Tamanho máximo de 10mb por página 
+Dados são salvos na máquina do usuário
+Salva apenas texto
+Esses dados não possuem tem de expiração, mas podem ser excluídos
+Dados ficam na aba APLICATION do Navegador
+
+SessionStorage
+Similar ao LocalStorage
+Tamanho máximo de 5mb
+Dados são salvos na máquina
+Quando a aba é fechada so dados expiram(são apagadas)
+
+Quando manipulamos um objeto e tentamos gravar com o setItem
+Ele gera um erro [object Object]
+Ele tenta converter o objeto em uma string de uma maneira mais simples
+Mas assim não funciona
+Para funcionar precisamos dizer que ali tem um objeto(chave: valor)
+Para isso vamos converter em um formato Json que reconhecerá cada
+uma das chaves do objeto e do seus respectivos valores
+
+
+Acontecerá o mesmo quando tentarmos recuperar, pois ele virá como 
+um texto(STRING) e não no formato de objeto
